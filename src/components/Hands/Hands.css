@@ -1,0 +1,25 @@
+.game-hands{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.user-hand{
+    width: 150px;
+    transform: rotate(30deg);
+}
+.pc-hand{
+    width: 150px;
+    transform: scaleX(-1);
+    transform: rotate(-30deg) scaleX(-1);
+}
+
+@media (max-width: 350px) {
+    .user-hand{
+        width: 100px;
+
+    }
+    .pc-hand{
+        width: 100px;
+    }
+}
