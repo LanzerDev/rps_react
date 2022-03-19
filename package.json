@@ -1,6 +1,6 @@
 {
   "homepage": "https://github.com/LanzerDev/rps-react.git",
-  "name": "react-game",
+  "name": "rps-react",
   "private": true,
   "version": "0.0.0",
   "scripts": {
