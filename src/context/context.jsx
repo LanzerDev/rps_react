@@ -1,7 +1,6 @@
 import React, { createContext, useState } from 'react'
 import piedraImg from '@assets/rock.svg'
-import papelImg from '@assets/paper.svg'
-import tijeraImg from '@assets/scissors.svg'
+
 
 export const DataContext = createContext();
 
@@ -13,7 +12,7 @@ export const DataProvider = ({ children }) =>{
     const [winmsg, setWinmsg] = useState('Good Luck!')
     const [userPoints, setUserPoints] = useState(0)
     const [pcPoints, setPcPoints] = useState(0)
-    const [an, setAn] = useState(false)
+    const [textAnimation, setTextAnimation] = useState(false)
     return (
         <DataContext.Provider value={{
             shake,
@@ -28,8 +27,8 @@ export const DataProvider = ({ children }) =>{
             setUserPoints,
             pcPoints,
             setPcPoints,
-            an,
-            setAn,
+            textAnimation,
+            setTextAnimation,
         }}>
             { children }
         </DataContext.Provider>

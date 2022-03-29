@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const WinMessage = () => {
 
-    const { winmsg, userPoints, pcPoints, an} = useContext(DataContext);
+    const { winmsg, userPoints, pcPoints, textAnimation} = useContext(DataContext);
 
     const winAnimations = {
         winMessage: 
@@ -17,14 +17,13 @@ const WinMessage = () => {
 
         }
       }
-  console.log(an)
   return (
       <div className="hud">
           <motion.p>{userPoints}</motion.p>
 
 
           <motion.p
-          animate={an ? "winMessage" : undefined}
+          animate={textAnimation ? "winMessage" : undefined}
           variants={winAnimations}
           >
           {winmsg}
