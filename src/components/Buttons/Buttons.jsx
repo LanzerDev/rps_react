@@ -12,6 +12,7 @@ const Buttons = () => {
     <React.Fragment>
         <div className="btn-container">
             <motion.button
+            className="btn"
             whileHover={{ scale: 1.1, backgroundColor: '#C5C7C7' }}
             whileTap={{ scale: 0.9 }}
             disabled={disable} onClick={() => start('piedra')} >
@@ -19,6 +20,7 @@ const Buttons = () => {
             </motion.button>
 
             <motion.button
+            className="btn"
             whileHover={{ scale: 1.1, backgroundColor: '#C5C7C7' }}
             whileTap={{ scale: 0.9 }}
             disabled={disable} onClick={() => start('papel')}>
@@ -26,6 +28,7 @@ const Buttons = () => {
             </motion.button>
 
             <motion.button
+            className="btn"
             whileHover={{ scale: 1.1, backgroundColor: '#C5C7C7' }}
             whileTap={{ scale: 0.9 }}
             disabled={disable} onClick={() => start('tijera')}>

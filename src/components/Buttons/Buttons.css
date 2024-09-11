@@ -2,6 +2,16 @@ img {
     width: 200px;
 }
 
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.btn{
+    border-radius: 20px;
+}
 
 @media (max-width: 650px){
     img {

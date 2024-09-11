@@ -1,7 +1,7 @@
 .game-hands{
     display: flex;
     justify-content: space-between;
-    
+    width: 500px;
 }
 
 .user-hand{
